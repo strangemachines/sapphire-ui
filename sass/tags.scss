@@ -1,0 +1,28 @@
+.tag {
+  @include tag;
+
+  &.tag--info {
+    background-color: $color-text;
+  }
+
+  &.tag--success {
+    background-color: $color-success;
+  }
+
+  &.tag--error {
+    background-color: $color-error;
+  }
+
+  &.tag--warning {
+    background-color: $color-warning;
+    color: $color-text;
+  }
+
+  &.tag--small {
+    padding: $spacing * .0625 $spacing * .25;
+  }
+
+  &.tag--large {
+    padding: $button-padding-large;
+  }
+}

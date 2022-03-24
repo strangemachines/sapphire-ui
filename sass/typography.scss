@@ -1,0 +1,81 @@
+.title {
+  @include title($font-size, $font-weight-bold);
+  font-family: $font-family-headings;
+
+  &.title--gargantuan {
+    @include title($font-size-gargantuan, $font-weight-bold);
+  }
+
+  &.title--huge {
+    @include title($font-size-huge, $font-weight-bold);
+  }
+
+  &.title--large {
+    @include title($font-size-large, $font-weight-bold);
+  }
+
+  &.title--small {
+    @include title($font-size-small, $font-weight-medium);
+  }
+
+  &.title--tiny {
+    @include title($font-size-tiny, $font-weight-medium);
+  }
+}
+
+
+.paragraph {
+  @include paragraph;
+
+  &.paragraph--small {
+    @include small;
+  }
+
+  &.paragraph--tiny {
+    @include tiny;
+  }
+
+  &.paragraph--loud {
+    @include loud;
+  }
+}
+
+
+.text {
+  &.text--tiny {
+    @include tiny;
+  }
+
+  &.text--small {
+    @include small;
+  }
+
+  &.text--loud {
+    @include loud;
+  }
+
+  &.text--centered {
+    @include centered;
+  }
+
+  &.text--hidden {
+    @include hidden;
+  }
+}
+
+
+.link {
+  @include link;
+
+  &.link--inverted {
+    @include inverted-text;
+  }
+}
+
+
+.code {
+  background-color: darken($color-background, 8);
+  color: $color-text;
+  font-size: $font-size-tiny;
+  padding: $spacing * .0312 $spacing * .12;
+}

@@ -1,0 +1,129 @@
+@mixin after($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+
+@mixin before($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+
+@mixin centered-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+@mixin container {
+  @include after($tablet-threshold) {
+    padding: $spacing * .25;
+  }
+
+  margin: 0 auto;
+  max-width: $desktop-threshold;
+  padding: $spacing * .125;
+  position: relative;
+  width: 100%;
+}
+
+
+@mixin title($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+  margin-bottom: $size;
+}
+
+
+@mixin paragraph {
+  display: block;
+  line-height: 1.8;
+  margin-bottom: $spacing * .25;
+}
+
+
+@mixin tiny {
+  font-size: $font-size-tiny;
+}
+
+
+@mixin small {
+  font-size: $font-size-small;
+}
+
+
+@mixin large {
+  font-size: $font-size-large;
+}
+
+
+@mixin huge {
+  font-size: $font-size-huge;
+}
+
+
+@mixin gargantuan {
+  font-size: $font-size-gargantuan;
+}
+
+
+@mixin centered {
+  text-align: center;
+}
+
+@mixin loud {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+
+@mixin hidden {
+  display: none;
+}
+
+
+@mixin link {
+  color: $color-primary;
+  text-decoration: none;
+}
+
+
+@mixin default-typography {
+  background-color: $color-background;
+  color: $color-text;
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
+
+@mixin inverted-text {
+  color: $color-background;
+}
+
+
+@mixin inverted {
+  @include inverted-text;
+
+  background-color: $color-primary;
+}
+
+
+@mixin radial($color-center, $color-edges) {
+  background: $color-edges radial-gradient(circle, $color-center 0%, $color-edges 100%) repeat scroll 0% 0%;
+}
+
+
+@mixin tag {
+  @include inverted;
+  @include small;
+
+  border-radius: $border-radius;
+  display: inline-block;
+  padding: $button-padding;
+}

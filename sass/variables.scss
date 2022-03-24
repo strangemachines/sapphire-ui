@@ -1,0 +1,46 @@
+// Colors
+$color-text: #2f2f2f;
+$color-background: #f3f6f6;
+$color-primary: #7266e8;
+$color-primary-dark: darken($color-primary, 4);
+$color-success: #18b194;
+$color-error: #c64a5b;
+$color-warning: #ffe28f;
+
+// Boxing
+$spacing: 4rem;
+$border: 1px solid $color-text;
+$border-radius: 3px;
+$button-padding-small: $spacing * .0625 $spacing * .25;
+$button-padding: $spacing * .125 $spacing * .5;
+$button-padding-large: $spacing * .25 $spacing;
+
+// Grid
+$columns-margin-horizontal: $spacing * 2;
+$column-margin: $columns-margin-horizontal;
+$columns-margin-vertical: calc($spacing / 2);
+
+
+// Typography
+$font-size: 1rem;
+$font-size-tiny: .7rem;
+$font-size-small: .85rem;
+$font-size-large: 1.4rem;
+$font-size-huge: 1.8rem;
+$font-size-gargantuan: 2.2rem;
+$font-family: Nunito, 'Helvetica Neue', Helvetica, sans-serif;
+$font-family-headings: Nunito, 'Times new roman';
+$font-weight: 200;
+$font-weight-medium: 400;
+$font-weight-bold: 700;
+
+// Media sizes thresholds
+$mobile-threshold: 40rem;
+$tablet-threshold: 80rem;
+$desktop-threshold: 120rem;
+$grid-threshold: $mobile-threshold;
+
+// Shadows
+$shadow: rgba(50, 50, 93, .25);
+$shadow-2: rgba(0, 0, 0, .3);
+$box-shadow:  $shadow 0 13px 27px -5px, $shadow-2 0 8px 16px -8px;

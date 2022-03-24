@@ -1,0 +1,75 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.column {
+  @include centered-content;
+
+  &.column-10,
+  &.column-12,
+  &.column-16,
+  &.column-20,
+  &.column-25,
+  &.column-33,
+  &.column-40,
+  &.column-50,
+  &.column-60,
+  &.column-75 {
+    margin: $spacing * .25 auto;
+    width: 99%;
+  }
+
+  @include after($grid-threshold) {
+    &.column-10 {
+      margin: $columns-margin-vertical calc($columns-margin-horizontal / 20);
+      width: calc(10% - $columns-margin-horizontal / 10);
+    }
+
+    &.column-12 {
+      margin: $columns-margin-vertical calc($columns-margin-horizontal / 16);
+      width: calc(12.49% - $columns-margin-horizontal / 8);
+    }
+
+    &.column-16 {
+      margin: $columns-margin-vertical calc($columns-margin-horizontal / 12);
+      width: calc(16.66% - $columns-margin-horizontal / 6);
+    }
+
+    &.column-20 {
+      margin: $columns-margin-vertical calc($columns-margin-horizontal / 10);
+      width: calc(20% - $columns-margin-horizontal / 5);
+    }
+
+    &.column-25 {
+      margin: $columns-margin-vertical calc($columns-margin-horizontal / 8);
+      width: calc(25% - $columns-margin-horizontal / 4);
+    }
+
+    &.column-33 {
+      margin: $columns-margin-vertical calc($columns-margin-horizontal / 6);
+      width: calc(33.3% - $columns-margin-horizontal / 3);
+    }
+
+    &.column-40 {
+      margin: $columns-margin-vertical calc($columns-margin-horizontal / 5);
+      width: calc(40% - $columns-margin-horizontal / 2.5);
+    }
+
+    &.column-50 {
+      margin: $columns-margin-vertical calc($columns-margin-horizontal / 4);
+      width: calc(50% - $columns-margin-horizontal / 2);
+    }
+
+    &.column-60 {
+      margin: $columns-margin-vertical calc($columns-margin-horizontal / 3.3);
+      width: calc(60% - $columns-margin-horizontal / 1.65);
+    }
+
+    &.column-75 {
+      margin: $columns-margin-vertical calc($columns-margin-horizontal / 2.6);
+      width: calc(75% - $columns-margin-horizontal / 1.3);
+    }
+  }
+}

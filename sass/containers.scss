@@ -1,0 +1,25 @@
+.container {
+  @include container;
+
+  &.container--centered {
+    @include centered-content;
+  }
+}
+
+
+.section {
+  margin: $spacing * .25;
+
+  @include after($tablet-threshold) {
+    margin: $spacing * .5;
+  }
+}
+
+
+.subsection {
+  margin: $spacing * .125;
+
+  @include after($tablet-threshold) {
+    margin: $spacing * .25;
+  }
+}
