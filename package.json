@@ -1,7 +1,7 @@
 {
   "name": "sapphire-ui",
   "version": "1.0.0",
-  "description": "",
+  "description": "sapphire-ui",
   "scripts": {
     "build": "make build",
     "dist": "make dist",
