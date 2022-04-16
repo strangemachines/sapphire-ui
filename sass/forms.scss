@@ -16,6 +16,10 @@
   &.button--large {
     padding: $button-padding-large;
   }
+
+  &.button--full {
+    width: 100%;
+  }
 }
 
 
