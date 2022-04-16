@@ -13,12 +13,12 @@ lint:
 
 .PHONY: build
 build: lint
-	@node_modules/.bin/sass --no-source-map $(sass_path)/main.scss $(dist_path)/main.css
+	@node_modules/.bin/sass --no-source-map $(sass_path)/all.scss $(dist_path)/main.css
 
 
 .PHONY: dist
 dist: build
-	@node_modules/.bin/sass -s compressed $(sass_path)/main.scss $(dist_path)/main.min.css
+	@node_modules/.bin/sass -s compressed $(sass_path)/all.scss $(dist_path)/main.min.css
 
 
 .PHONY: clean
