@@ -14,6 +14,16 @@
     color: $color-primary;
   }
 
+  &.button--success {
+    background-color: $color-success;
+    border-color: $color-success;
+  }
+
+  &.button--error {
+    background-color: $color-error;
+    border-color: $color-error;
+  }
+
   &.button--large {
     padding: $button-padding-large;
   }
