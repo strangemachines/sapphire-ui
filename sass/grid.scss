@@ -1,7 +1,5 @@
 .row {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+  @include row
 }
 
 

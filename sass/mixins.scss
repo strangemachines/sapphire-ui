@@ -12,6 +12,7 @@
 }
 
 
+// Containers mixins
 @mixin centered-content {
   align-items: center;
   display: flex;
@@ -30,6 +31,14 @@
   padding: $spacing * .125;
   position: relative;
   width: 100%;
+}
+
+
+// Grid mixins
+@mixin row {
+  display: flex;
+  flex-wrap: wrap;
+  width: $row-width;
 }
 
 
