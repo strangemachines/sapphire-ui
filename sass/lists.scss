@@ -1,11 +1,11 @@
 .list {
-  margin: 0 0 $spacing * .5 $spacing * .35;
+  margin: $list-margin;
 
   &.list--unordered {
-    list-style-type: disc;
+    list-style-type: $list-unordered-style;
   }
 
   &.list--ordered {
-    list-style-type: decimal;
+    list-style-type: $list-unordered-style;
   }
 }

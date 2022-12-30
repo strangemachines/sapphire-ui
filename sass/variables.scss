@@ -48,6 +48,13 @@ $text-line-height: 1.8;
 $paragraph-line-height: $text-line-height;
 $paragraph-margin: 0 $spacing * .25 0 0;
 
+
+// Lists
+$list-margin: 0 0 $spacing * .5 $spacing * .35;
+$list-ordered-style: decimal;
+$list-unordered-style: disc;
+
+
 // Media sizes thresholds
 $mobile-threshold: 40rem;
 $tablet-threshold: 80rem;
