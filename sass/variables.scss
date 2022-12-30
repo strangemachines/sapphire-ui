@@ -56,6 +56,10 @@ $list-ordered-style: decimal;
 $list-unordered-style: disc;
 
 
+// List items
+$list-item-margin:  0 $spacing * .25 0 0;
+
+
 // Media sizes thresholds
 $mobile-threshold: 40rem;
 $tablet-threshold: 80rem;
