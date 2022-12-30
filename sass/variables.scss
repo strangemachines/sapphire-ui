@@ -57,7 +57,19 @@ $list-unordered-style: disc;
 
 
 // List items
-$list-item-margin:  0 $spacing * .25 0 0;
+$list-item-margin: 0 $spacing * .25 0 0;
+
+
+// Pre
+$pre-margin: 0 $spacing * .25 0 0;
+$pre-padding: $spacing * .125;
+
+
+// Code 
+$code-background: darken($color-background, 8);
+$code-color: $color-text;
+$code-font-size: $font-size-tiny;
+$code-padding: $spacing * .125;
 
 
 // Media sizes thresholds

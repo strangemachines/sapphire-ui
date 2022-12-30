@@ -73,9 +73,11 @@
 }
 
 
+.pre {
+  @include pre;
+}
+
+
 .code {
-  background-color: darken($color-background, 8);
-  color: $color-text;
-  font-size: $font-size-tiny;
-  padding: $spacing * .0312 $spacing * .12;
+  @include code;
 }
