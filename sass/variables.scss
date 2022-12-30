@@ -13,15 +13,6 @@ $border: 1px solid $color-text;
 $border-radius: 3px;
 
 
-// Buttons
-$button-border: 1px solid $color-primary;
-$button-border-radius: $border-radius;
-$button-cursor: pointer;
-$button-padding-small: $spacing * .0625 $spacing * .25;
-$button-padding: $spacing * .125 $spacing * .5;
-$button-padding-large: $spacing * .25 $spacing;
-$button-text-align: left;
-
 // Grid
 $columns-margin-horizontal: $spacing * 2;
 $column-margin: $columns-margin-horizontal;
@@ -43,6 +34,23 @@ $font-weight: 200;
 $font-weight-medium: 400;
 $font-weight-bold: 700;
 $text-line-height: 1.8;
+
+
+// Buttons
+$button-border: 1px solid $color-primary;
+$button-border-radius: $border-radius;
+$button-cursor: pointer;
+$button-font-size: $font-size;
+$button-padding-small: $spacing * .0625 $spacing * .25;
+$button-padding: $spacing * .125 $spacing * .5;
+$button-padding-large: $spacing * .25 $spacing;
+$button-text-align: left;
+
+
+// Tags
+$tag-border-radius: $button-border-radius;
+$tag-font-size: $button-font-size;
+$tag-padding: $button-padding;
 
 
 // Paragraphs
