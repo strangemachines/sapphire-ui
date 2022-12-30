@@ -6,7 +6,7 @@ A pragmatic CSS framework.
 ## Installation
 
 ```shell
-npm i strangemachines/sapphire-ui@1.0.4
+npm i strangemachines/sapphire-ui@2.0.0
 ```
 
 Without customization:
