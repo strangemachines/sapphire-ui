@@ -155,3 +155,19 @@
   display: inline-block;
   padding: $button-padding;
 }
+
+
+@mixin pre {
+  background-color: $code-background;
+  margin: $pre-margin;
+  padding: $pre-padding;
+  white-space: pre-wrap;
+}
+
+
+@mixin code {
+  background-color: $code-background;
+  color: $code-color;
+  font-size: $code-font-size;
+  padding: $code-padding;
+}
