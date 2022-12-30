@@ -1,31 +1,34 @@
 .title {
-  @include title($font-size, $font-weight-bold);
-  font-family: $font-family-headings;
+  @include title;
 
   &.title--gargantuan {
-    @include title($font-size-gargantuan, $font-weight-bold);
+    @include title-gargantuan;
   }
 
   &.title--huge {
-    @include title($font-size-huge, $font-weight-bold);
+    @include title-huge;
   }
 
   &.title--large {
-    @include title($font-size-large, $font-weight-bold);
+    @include title-large;
   }
 
   &.title--small {
-    @include title($font-size-small, $font-weight-medium);
+    @include title-small;
   }
 
   &.title--tiny {
-    @include title($font-size-tiny, $font-weight-medium);
+    @include title-tiny;
   }
 }
 
 
 .paragraph {
   @include paragraph;
+
+  &.paragraph--large {
+    font-size: $font-size-large;
+  }
 
   &.paragraph--small {
     font-size: $font-size-small;
@@ -42,6 +45,10 @@
 
 
 .text {
+  &.text--large {
+    font-size: $font-size-large;
+  }
+
   &.text--tiny {
     font-size: $font-size-tiny;
   }
@@ -55,7 +62,7 @@
   }
 
   &.text--centered {
-    display: none;
+    text-align: center;
   }
 }
 

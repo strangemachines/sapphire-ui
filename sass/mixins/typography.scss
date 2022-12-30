@@ -1,11 +1,42 @@
-@mixin title($size, $weight) {
-  font-size: $size;
-  font-weight: $weight;
-  margin-bottom: $size;
+@mixin title {
+  font-family: $font-family-headings;
+  font-size: $font-size;
+  font-weight: $font-weight-bold;
+  margin-bottom: $font-size;
 
   &::first-letter {
     text-transform: uppercase;
   }
+}
+
+
+@mixin title-gargantuan {
+  font-size: $font-size-gargantuan;
+  margin-bottom: $font-size-gargantuan;
+}
+
+
+@mixin title-huge {
+  font-size: $font-size-huge;
+  margin-bottom: $font-size-huge;
+}
+
+
+@mixin title-large {
+  font-size: $font-size-large;
+  margin-bottom: $font-size-large;
+}
+
+
+@mixin title-small {
+  font-size: $font-size-small;
+  margin-bottom: $font-size-small;
+}
+
+
+@mixin title-tiny {
+  font-size: $font-size-tiny;
+  margin-bottom: $font-size-tiny;
 }
 
 
