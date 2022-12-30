@@ -8,18 +8,18 @@
 
 
 .section {
-  margin: $spacing * .25;
-
   @include after($tablet-threshold) {
     margin: $spacing * .5;
   }
+
+  margin: $spacing * .25;
 }
 
 
 .subsection {
-  margin: $spacing * .125;
-
   @include after($tablet-threshold) {
     margin: $spacing * .25;
   }
+
+  margin: $spacing * .125;
 }
