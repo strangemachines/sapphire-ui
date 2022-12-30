@@ -5,21 +5,6 @@
 @import 'mixins/tag';
 @import 'mixins/typography';
 
-@mixin inverted {
-  background-color: $color-primary;
-  color: $color-background;
-}
-
-
-@mixin hidden {
-  display: none;
-}
-
-
-@mixin inverted-text {
-  color: $color-background;
-}
-
 
 @mixin radial($color-center, $color-edges) {
   background: $color-edges radial-gradient(circle, $color-center 0%, $color-edges 100%) repeat scroll 0% 0%;

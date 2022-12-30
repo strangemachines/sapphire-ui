@@ -9,40 +9,16 @@
 }
 
 
+@mixin inverted {
+  background-color: $color-primary;
+  color: $color-background;
+}
+
+
 @mixin paragraph {
   display: block;
   line-height: $paragraph-line-height;
   margin: $paragraph-margin;
-}
-
-
-@mixin tiny {
-  font-size: $font-size-tiny;
-}
-
-
-@mixin small {
-  font-size: $font-size-small;
-}
-
-
-@mixin large {
-  font-size: $font-size-large;
-}
-
-
-@mixin huge {
-  font-size: $font-size-huge;
-}
-
-
-@mixin gargantuan {
-  font-size: $font-size-gargantuan;
-}
-
-
-@mixin centered {
-  text-align: center;
 }
 
 
