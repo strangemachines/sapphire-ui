@@ -28,11 +28,11 @@
   @include paragraph;
 
   &.paragraph--small {
-    @include small;
+    font-size: $font-size-small;
   }
 
   &.paragraph--tiny {
-    @include tiny;
+    font-size: $font-size-tiny;
   }
 
   &.paragraph--loud {
@@ -43,11 +43,11 @@
 
 .text {
   &.text--tiny {
-    @include tiny;
+    font-size: $font-size-tiny;
   }
 
   &.text--small {
-    @include small;
+    font-size: $font-size-small;
   }
 
   &.text--loud {
@@ -55,11 +55,7 @@
   }
 
   &.text--centered {
-    @include centered;
-  }
-
-  &.text--hidden {
-    @include hidden;
+    display: none;
   }
 }
 
@@ -68,7 +64,7 @@
   @include link;
 
   &.link--inverted {
-    @include inverted-text;
+    color: $color-background;
   }
 }
 
