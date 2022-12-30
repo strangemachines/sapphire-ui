@@ -1,0 +1,19 @@
+@mixin centered-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+@mixin container {
+  @include after($tablet-threshold) {
+    padding: $spacing * .25;
+  }
+
+  margin: 0 auto;
+  max-width: $desktop-threshold;
+  padding: $spacing * .125;
+  position: relative;
+  width: 100%;
+}

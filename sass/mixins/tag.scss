@@ -1,0 +1,8 @@
+@mixin tag {
+  @include inverted;
+  @include small;
+
+  border-radius: $border-radius;
+  display: inline-block;
+  padding: $button-padding;
+}

@@ -1,0 +1,83 @@
+@mixin title($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+  margin-bottom: $size;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+
+@mixin paragraph {
+  display: block;
+  line-height: $paragraph-line-height;
+  margin: $paragraph-margin;
+}
+
+
+@mixin tiny {
+  font-size: $font-size-tiny;
+}
+
+
+@mixin small {
+  font-size: $font-size-small;
+}
+
+
+@mixin large {
+  font-size: $font-size-large;
+}
+
+
+@mixin huge {
+  font-size: $font-size-huge;
+}
+
+
+@mixin gargantuan {
+  font-size: $font-size-gargantuan;
+}
+
+
+@mixin centered {
+  text-align: center;
+}
+
+
+@mixin loud {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+
+@mixin link {
+  color: $color-primary;
+  text-decoration: none;
+}
+
+
+@mixin pre {
+  background-color: $code-background;
+  margin: $pre-margin;
+  padding: $pre-padding;
+  white-space: pre-wrap;
+}
+
+
+@mixin code {
+  background-color: $code-background;
+  color: $code-color;
+  font-size: $code-font-size;
+  padding: $code-padding;
+}
+
+
+@mixin default-typography {
+  background-color: $color-background;
+  color: $color-text;
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+}

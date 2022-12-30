@@ -1,0 +1,12 @@
+@mixin button {
+  @include inverted;
+
+  border: $button-border;
+  border-radius: $button-border-radius;
+  box-shadow: $box-shadow;
+  cursor: $button-cursor;
+  display: inline-block;
+  font-family: $font-family;
+  padding: $button-padding;
+  text-align: $button-text-align;
+}
