@@ -1,8 +1,8 @@
 @mixin tag {
   @include inverted;
 
-  border-radius: $border-radius;
+  border-radius: $tag-border-radius;
   display: inline-block;
-  font-size: $font-size-small;
-  padding: $button-padding;
+  font-size: $tag-font-size;
+  padding: $tag-padding;
 }
